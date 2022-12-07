@@ -1,0 +1,66 @@
+.header {
+   height: 100vh;
+   // position: absolute;
+   // top: 0;
+   // left: 0;
+   overflow: hidden;
+
+   .header-img {
+      width: 100%;
+      height: 100vh;  
+      flex: none;
+      position: relative;
+      // scroll-snap-align: start;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         
+
+      }
+   }
+
+   .header-content {
+      position: absolute;
+      top: 15%;
+      left: 5em;
+      text-transform: uppercase;
+
+      h2, p {
+         color: $main-bg;
+      }
+      h2 {
+         padding-bottom: .3em;
+         font-size: 2.5em;
+      }
+      p {
+         font-weight: normal;
+         font-size: 1.8em;
+      }
+   }
+
+   .discover-btn-wrapper {
+      position: absolute;
+      bottom: -6em;
+      left: 5em;
+
+      a {
+         text-decoration: none;
+      }
+
+      .discover-btn {
+         font-size: 1.2rem;
+         font-family: $main-type;
+         font-weight: bold;
+         text-transform: uppercase;
+         color: $main-bg;
+
+         i {
+            padding-left: .5em;
+         }
+
+         
+      }
+   }
+}

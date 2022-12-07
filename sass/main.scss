@@ -1,0 +1,28 @@
+@import "./modules/_reset.scss";
+@import "./modules/_vars.scss";
+@import "./modules/_header.scss";
+@import "./modules/_video.scss";
+@import "./modules/_hero.scss";
+@import "./modules/_home-content.scss";
+@import "./modules/_models.scss";
+@import "./modules/_feature.scss";
+@import "./modules/_footer.scss";
+
+
+
+
+
+html {
+   scroll-behavior: smooth;
+}
+body {
+   width: 100%;
+   overflow-x: hidden;
+   font-family: $main-type;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   background: none;
+}
