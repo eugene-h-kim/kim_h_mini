@@ -2,7 +2,7 @@ export default {
    name: 'TheLightboxComponent',
 
    props: {
-      car: Object
+      mini: Object
    },
 
    template: `
@@ -10,19 +10,19 @@ export default {
       <div class="info-text">
          <div class="models-basic">
             <div>
-               <h3>{{car.name}}</h3>
-               <p>Price: {{car.price}}</p>
+               <h3>2023 MINI {{mini.name}}</h3>
+               <p>Price: {{mini.price}}</p>
             </div>
 
             <div class="text-wrapper">
-               <div><p><span>Lease</span><br>{{car.lease}}</p></div>
-               <div><p><span>Finance</span><br>{{car.finance}}</p></div>
+               <div><p><span>Lease</span><br>{{mini.lease}}</p></div>
+               <div><p><span>Finance</span><br>{{mini.finance}}</p></div>
             </div>
          </div>
 
          <div class="models-features">
             <ul>
-               <li v-for="feature in car.features">
+               <li v-for="feature in mini.features">
                   {{ feature }}
                </li>
             </ul>
@@ -30,7 +30,7 @@ export default {
       </div>
 
       <div class="info-img">
-         <img :src='"images/" + car.pic' alt="vehicle image">
+         <img :src='"images/" + mini.pic' alt="vehicle image">
       </div>
    </div>
    `,

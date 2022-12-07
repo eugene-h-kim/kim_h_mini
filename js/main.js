@@ -1,5 +1,5 @@
 // import components first!!!
-import CarThumb from './components/TheThumbnail.js';
+import MiniThumb from './components/TheThumbnail.js';
 import LightBox from './components/TheLightbox.js';
 
 (()=> {
@@ -11,7 +11,7 @@ import LightBox from './components/TheLightbox.js';
 				// get your remote data here 
 				fetch('./data/data.json')
 					.then(res => res.json()) // convert the data into a plain js object
-					.then(data => this.carData = data) // convert to things we can use
+					.then(data => this.miniData = data) // convert to things we can use
 				.catch(error => {
 					console.error(error);
 					document.querySelector(".error").style.display = "block"
@@ -20,21 +20,21 @@ import LightBox from './components/TheLightbox.js';
 
 		data() {
 				return {
-					carData: {},
+					miniData: {},
 					lbData: {},
 					showLB: false
 				}
 		},
 
 		components: {
-				thecarthumb: CarThumb,
+				theminithumb: MiniThumb,
 				thelightbox: LightBox
 		},
 
 		methods: {
-			loadLightbox(car) {
+			loadLightbox(mini) {
 				// set the lightbox data/ render it
-				this.lbData = car;
+				this.lbData = mini;
 
 				//show the lightbox
 				if (document.querySelector(".info-container")) {
