@@ -62,15 +62,15 @@
          <div>
             <h2>THE MINI COUNTRYMAN LINEUP.</h2>
          </div>
-         <!-- car thumbnail component -->
+         <!-- mini thumbnail component -->
          <div class="models-container">
-            <thecarthumb @loadlbdata="loadLightbox" v-for="car in carData" :car="car"></thecarthumb>
+            <theminithumb @loadlbdata="loadLightbox" v-for="mini in miniData" :mini="mini"></theminithumb>
          </div>
          <div class="error">Loading error. Please contact support@mini.ca for assistance. </div>
 
 
          <!-- custom light component goes here -->
-         <thelightbox v-if="showLB" :car="lbData"></thelightbox>
+         <thelightbox v-if="showLB" :mini="lbData"></thelightbox>
          <!-- end lightbox -->
       </section>
 
