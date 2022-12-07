@@ -1,0 +1,37 @@
+{
+   "CooperAll4": {
+      "name": "Cooper All 4",
+      "price": "$40,956",
+      "lease": "$616",
+      "finance": "$750",
+      "features": ["3 Cylinder 12 Valve Twin Power Turbo","8 Speed Steptronic Automatic","Top Speed - 200 km/h "],
+      "pic": "cooper.png"
+   },
+
+   "CooperSAll4": {
+      "name": "Cooper S All 4",
+      "price": "$46,156",
+      "lease": "$677",
+      "finance": "$847",
+      "features": ["4 Cylinder 16 Valve Twin Power Turbo","230 km/h Top Speed","8 Speed Steptronic Automatic","Top Speed - 223 km/h "],
+      "pic": "cooper_s.png"
+   },
+
+   "JohnCooperWorksAll4": {
+      "name": "John Cooper Works All 4",
+      "price": "$54,156",
+      "lease": "$773",
+      "finance": "$996",
+      "features": ["4 Cylinder 16 Valve Twin Power Turbo","8 Speed Steptronic Automatic","Top Speed - 240 km/h "],
+      "pic": "john_cooper_works.png"
+   },
+
+   "CooperSEAll4": {
+      "name": "Cooper SE All 4",
+      "price": "$47,956",
+      "lease": "$770",
+      "finance": "$652",
+      "features": ["3 Cylinder 12 Valve Twin Power Turbo","6 Speed Steptronic Automatic","Top Speed - 197 km/h "],
+      "pic": "cooper_se.png"
+   }
+}
