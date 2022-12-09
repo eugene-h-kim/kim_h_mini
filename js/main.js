@@ -9,7 +9,8 @@ import LightBox from './components/TheLightbox.js';
 	createApp({
 		created() {
 				// get your remote data here 
-				fetch('./data/data.json')
+				fetch('./scripts/json.php')
+				// fetch('./data/data.json')
 					.then(res => res.json()) // convert the data into a plain js object
 					.then(data => this.miniData = data) // convert to things we can use
 				.catch(error => {
