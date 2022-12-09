@@ -7,10 +7,11 @@
 
    require_once("config.php");
 
-   $label = "id";
+   
 
    //Return all results
    $getContent = getAll('tbl_mini');
+   $label = "id";
 
    if(!is_string($getContent)) {
       //Working object
